@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#009933">
+    <!-- Your app title -->
+    <title>CONSTITUTION</title>
+    <!-- Path to Framework7 Library CSS, Material Theme -->
+    <link rel="stylesheet" href="css/framework7.material.min.css">
+    <!-- Path to Framework7 color related styles, Material Theme -->
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+	<!--link rel="stylesheet" href="css/main.css" /-->
+	
+	<!-- added bootstrap-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://debug-software.intel.com/target/target-script-min.js#pTDIugZnVVdmPwsGUBuGKJ92iqiF_WBZKUXKNNDH_Ok"></script>
+
+<!--in-line-->
+<style>
+#menu ul {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		color: #fff;
+		font-family: "Roboto Slab", serif;
+		font-family: 400;
+		font-size: 16px;
+		letter-spacing: 0.075em;
+		list-style: none;
+		margin-bottom: 0;
+		padding: 0;
+		text-transform: uppercase;
+	}
+	
+	
+		#menu ul a, #menu ul span {
+			border-bottom: 0;
+			color: #fff;
+			cursor: pointer;
+			display: block;
+			font-size: 20px;
+			padding: 0.625em 0;
+		}
+
+			#menu ul a:hover, #menu ul span:hover {
+				color: #f56a6a;
+			}
+
+			#menu ul a.opener, #menu ul span.opener {
+				-moz-transition: color 0.2s ease-in-out;
+				-webkit-transition: color 0.2s ease-in-out;
+				-ms-transition: color 0.2s ease-in-out;
+				transition: color 0.2s ease-in-out;
+				text-decoration: none;
+				-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+				position: relative;
+			}
+
+				#menu ul a.opener:before, #menu ul span.opener:before {
+					-moz-osx-font-smoothing: grayscale;
+					-webkit-font-smoothing: antialiased;
+					font-family: FontAwesome;
+					font-style: normal;
+					font-weight: normal;
+					text-transform: none !important;
+				}
+
+				#menu ul a.opener:before, #menu ul span.opener:before {
+					-moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
+					-webkit-transition: color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+					-ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
+					transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+					color: #9fa3a6;
+					content: '\f078';
+					position: absolute;
+					right: 0;
+				}
+
+				#menu ul a.opener:hover:before, #menu ul span.opener:hover:before {
+					color: #f56a6a;
+				}
+
+				#menu ul a.opener.active + ul, #menu ul span.opener.active + ul {
+					display: block;
+				}
+
+				#menu ul a.opener.active:before, #menu ul span.opener.active:before {
+					-moz-transform: rotate(-180deg);
+					-webkit-transform: rotate(-180deg);
+					-ms-transform: rotate(-180deg);
+					transform: rotate(-180deg);
+				}
+
+	#menu > ul > li {
+		border-top: solid 1px rgba(210, 215, 217, 0.75);
+		margin: 0.5em 0 0 0;
+		padding: 0.5em 0 0 0;
+	}
+
+		#menu > ul > li > ul {
+			color: #9fa3a6;
+			display: none;
+			margin: 0.5em 0 1.5em 0;
+			padding-left: 1em;
+		}
+
+			#menu > ul > li > ul a, #menu > ul > li > ul span {
+				font-size: 0.8em;
+			}
+
+			#menu > ul > li > ul > li {
+				margin: 0.125em 0 0 0;
+				padding: 0.125em 0 0 0;
+			}
+
+		#menu > ul > li:first-child {
+			border-top: 0;
+			margin-top: 0;
+			padding-top: 0;
+		}
+		
+		
+		<!--table-->
+		
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+table tr {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+  table caption {
+    font-size: 1.3em;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: left;
+  }
+  table td:before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+<!--dropdown-->
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+<!--page bar-->
+
+.icon-bar {
+    width: 100%;
+    background-color: #339966;
+    overflow: auto;
+}
+
+.icon-bar a {
+	float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: #339966;
+    font-size: 24px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color:  !important;
+}
+
+.h2 {
+	float: left;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: #4CAF50;
+    font-size: 36px;
+}
+</style>
+  </head>
+  <body>
+  <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal" style="background-color:#339966; background-image: url(img/NAV.jpg); background-repeat:no-repeat; color:#fff">
+      <div class="content-block" style="background-color:#339966">
+        <nav id="menu" style="margin-top:265px; color:#ffffff">
+									<header class="major">
+										<h2></h2>
+									</header>
+									<ul id="myUL">
+										
+										<li>
+											<span class="opener icon">IDENTITY</span>
+											<ul>
+												<li class="active"><a href="const/1.html">Tenet</a></li>
+												<li><a href="const/2.html">Trustees</a></li>
+												<li><a href="const/3.html">Common Seal</a></li>
+												<li><a href="const/4.html">Services</a></li>
+												
+												
+												
+												
+											</ul>
+										</li>
+										<li>
+											<span class="opener">GOVERNMENT</span>
+											<ul>
+												<li><a href="const/5.html">General Council</a></li>
+												<li><a href="const/6.html">Executive Council</a></li>
+												<li><a href="const/7.html">RCC</a></li>
+												<li><a href="const/8.html">Area Presbytery</a></li>
+												<li><a href="const/9.html">District Presbytery</a></li>
+												<li><a href="const/10.html">Local Presbytery</a></li>
+												<li><a href="const/11.html">Worship Centre</a></li>
+												
+												
+												
+												
+											</ul>
+										</li>
+										<li>
+											<span class="opener">ADMINISTRATION</span>
+											<ul>
+												<li><a href="const/12.html">The Chairman</a></li>
+												<li><a href="const/13.html">The GES</a></li>
+												<li><a href="const/14.html">The IMD</a></li>
+												<li><a href="const/15.html">Ministers</a></li>
+												<li><a href="const/16.html">Missionaries</a></li>
+												<li><a href="const/17.html">Local Presbytery</a></li>
+												
+												
+												
+												
+												
+											</ul>
+										</li>
+										<li>
+											<span class="opener">MINISTRIES</span>
+											<ul>
+												<li><a href="const/18.html">Evangelism</a></li>
+												<li><a href="const/19.html">Youth</a></li>
+												<li><a href="const/20.html">PEMEM</a></li>
+												<li><a href="const/21.html">Women</a></li>
+												<li><a href="const/22.html">children</a></li>
+												
+												
+												
+												
+											</ul>
+										</li>
+										<li>
+											<span class="opener">OFFICERS</span>
+											<ul>
+												<li><a href="const/23.html">Unpaid officers</a></li>
+												<li><a href="const/24.html">Membership</a></li>
+												<li><a href="const/25.html">Discipline</a></li>
+												
+												
+												
+											</ul>
+										</li>
+										<li>
+											<span class="opener">BOARDS</span>
+											<ul>
+												<li><a href="const/26.html">Int. Mission Board</a></li>
+												<li><a href="const/27.html">Finance</a></li>
+												<li><a href="const/28.html">Univ. & Tertiary</a></li>
+												<li><a href="const/29.html">Pensions</a></li>
+												<li><a href="const/30.html">Ministerial</a></li>
+												<li><a href="const/31.html">PENTSOS</a></li>
+												<li><a href="const/32.html">Estate</a></li>
+												<li><a href="const/33.html">Literature</a></li>
+												<li><a href="const/34.html">Music</a></li>
+												<li><a href="const/35.html">Electoral</a></li>
+												<li><a href="const/36.html">Other Boards</a></li>
+												
+												
+												
+												
+											</ul>
+										</li>
+										<li>
+											<span class="opener">FINANCE</span>
+											<ul>
+												<li><a href="const/37.html">Finance</a></li>
+												
+												
+												
+												
+											</ul>
+										</li>
+										<li>
+											<span class="opener">MISCELLANEOUS</span>
+											<ul>
+												<li><a href="const/38.html">MISCELLANEOUS</a></li>
+												
+												
+												
+												
+											</ul>
+										</li>
+										<li>
+											<span class="opener">HELP DESK</span>
+											<ul>
+												<li><a href="form.html">ABOUT</a></li>
+												<li><a href="services.html">FAQs</a></li>
+												<li><a href="about.html">Privacy</a></li>
+												<li><a href="about.html">Disclaimer</a></li>
+												<li><a href="about.html">Terms of Use</a></li>
+									
+											</ul>
+										</li>
+									</ul>
+								</nav>
+      </div>
+    </div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover" style="background-color:; color:#339966;">
+      <div class="content-block">
+               
+				<section>
+									<header class="major">
+										<h2>Also Available</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<p>The Pentecostal Songs app provides over 2000 lyrics and audio songs in English and Twi</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+											<p>Learn from one comprehensive library - the Study Guide is your best friend</p>
+										</article>
+										<article>
+											<a href="tos.html" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<p>English BECE Past Question and Answers' app is must gift for your ward. Available in Windows,IOS, CDs, etc.</p>
+										</article>
+									</div>
+									<p class="actions">
+										<a href="http://elivestudio.com/office" class="button">More</a>
+									</p>
+								</section><hr />
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>Join our empire of digital solutions. Our works have been providing web and native applications which meet the 21ST Century tech standards. From E-commerce, Corporate, News, Forum Websites and Database development.
+									Our mobile applications are smart in layout, secure in data, very fast loading and ever ready integration with over 60 famous plugins. Our apps
+									cast across all platforms especially, Android, IOS, Windows and Facebook. Call us now</p>
+									<ul class="contact">
+										<li class=" fa fa-envelope-o"><a href="mailto:admin@elivestudio.com">  admin@elivestudio.com</a></li>
+										<li class="fa fa-phone"><a href="tel:+233243106512">  (+233) 243 1065 12</a></li>
+										<li class="fa fa-home">  474 / 14 Korkor Wayo Street<br />
+										Ebenezer Down - Dansoman</li>
+									</ul><br /> <hr />
+									
+									 <H4>OUR HANDLES</H4>
+				<br>
+				<center>
+				<span><a href="http://www.facebook.com/elivestudio" class="fa fa-facebook" style="font-size:24px">     </a></span>
+				<span><a href="http://www.twitter.com/elivestudio" class="fa fa-twitter" style="font-size:24px">      </a></span>
+				<span><a href="https://www.youtube.com/channel/UCbv2oHlupweVNahcHiYPAtg"   class="fa fa-youtube" style="font-size:24px">     </a></span>
+				<span><a href="http://www.facebook.com/elivestudio" class="fa fa-instagram" style="font-size:24px">     </a></span>
+				</center>
+      </div>
+    </div>
+		
+      </div>
+    </div>
+    <!-- Views, and they are tabs-->
+    <!-- We need to set "toolbar-through" class on it to keep space for our tab bar-->
+    
+    <!-- Views -->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-fixed toolbar-fixed">
+          <!-- Page, "data-page" contains page name -->
+          <div data-page="index" class="page">
+ 
+            <!--Top Navbar. In Material theme it should be inside of the page--
+            <div class="navbar" style="background-color:#339966">
+              <div class="navbar-inner">
+                <div class="center">C.O.P. CONSTITUTION</div>
+				<div class="right"><a href="#" class="link open-panel"><i class="icon icon-bars"></i></a></div>
+              </div>
+            </div>
+			<!-- add a searchbar-->
+           <div data-page="searchbar" class="page toolbar-fixed" id="home" >
+				<div class="navbar" style="background-color:#339966">
+					<div class="navbar-inner" >
+				<div class="left"><a href="#" class="link open-panel icon-only"><i class="icon icon-bars"></i></a></div>
+					<div class="center">C.O.P. CONSTITUTION</div>
+				<div class="right"><a href="#" data-panel="right" class="link open-panel icon-only"><i class="icon icon-forward"></i></a></div>
+				
+				</div>
+				</div>
+				
+				<!--form-->
+			<form data-search-list=".search-here" data-search-in=".item-title" class="searchbar searchbar-init" style="background-color:#339966">
+			<div class="searchbar-input">
+			<input type="search" placeholder="Search"/><a href="#" class="searchbar-clear"></a>
+			</div>
+			</form>
+			<div class="searchbar-overlay"></div>
+           
+		   <div class="page-content">
+			<div class="list-block searchbar-not-found">
+			<ul>
+			<li class="item-content">
+			<div class="item-inner">
+            <div class="item-title">Nothing found</div>
+			</div>
+			</li>
+			</ul>
+			</div>
+			
+			<!--data-->
+			<div class="list-block search-here searchbar-found">
+      <ul>
+			<!--A-Accordion-->
+			
+	  
+          <li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/1.html">Article One</a></div>
+          </div>
+        </li>
+		 
+		 <li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/2.html">Article Two</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/3.html">Article Three</a></div>
+          </div>
+        </li>
+		
+		 <li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/4.html">Article Four</a></div>
+          </div>
+        </li>
+		
+       <li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/5.html">Article Five</a></div>
+          </div>
+        </li>
+		
+		 <li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/6.html">Article Six</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/7.html">Article Seven</a></div>
+          </div>
+        </li>
+		
+		 <li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/8.html">Article Eight</a></div>
+          </div>
+        </li>
+		
+         <li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/9.html">Article Nine</a></div>
+          </div>
+        </li>
+		
+		
+		<!--TH-->
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/10.html">Article 10</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/11.html">Article 11</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/12.html">Article 12</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/13.html">Article 13 </a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/14.html"> Article 14</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/15.html">Article 15</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/16.html">Article 16</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/17.html">Article 17</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/18.html">Article 18</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/19.html">Article 19</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/20.html">Article 20</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/21.html">Article 21</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/22.html">Article 22</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/23.html">Article 23 </a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/24.html">Article 24</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/25.html">Article 25</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/26.html">Article 26</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/27.html">Article 27</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/28.html">Article 28</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/29.html">Article 29</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/30.html">Article 30</a></div>
+          </div>
+        </li>
+		
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/31.html">Article 31</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/32.html">Article 32</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/33.html">Article 33</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/34.html">Article 34</a></div>
+          </div>
+        </li>
+		
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/35.html">Article 35</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/36.html">Article 36</a></div>
+          </div>
+        </li>
+		
+		
+	
+		
+		
+        <li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/37.html">Article 37</a></div>
+          </div>
+        </li>
+		
+		 <li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="const/38.html">Article 38</a></div>
+          </div>
+        </li>
+		
+		
+        <li class="item-content" style="background-color:CYAN; Color:#000">
+          <div class="item-inner" style="background-color:CYAN; Color:#000"> 
+            <div class="item-title"> MINISTER'S MANUAL</div>
+          </div>
+        </li>
+		
+        <li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/1.html">Acknowledgement</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/2.html">The Lord’s Prayer</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/3.html">The Apostles’ Creed</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/4.html">The Beatitudes </a></div>
+          </div>
+        </li>
+		
+        <li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/5.html">Rules of Conduct</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/6.html">Tenets of the Church</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"><a href="manual/7.html">Salutation</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/8.html">Benediction</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/9.html">Order of Service</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/10.html">Sunday Morning</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/11.html">Sunday Evening</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/12.html">Wednesday Evening</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"><a href="manual/13.html">Friday Evening</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/14.html">Naming of Children</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/15.html">Dedication of Children</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/16.html">Water Baptismal Service</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/17.html">Right Hand of Fellowship</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/18.html">The Lord’s Supper</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/19.html">Marriage Procedure</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/20.html">Blessing under the Ordinance</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/21.html">Ordinary Blessing</a></div>
+          </div>
+        </li>
+		
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/22.html">Funeral Service</a></div>
+          </div>
+        </li>
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/23.html">For Adults</a></div>
+          </div>
+        </li>
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/24.html">For Children</a></div>
+          </div>
+        </li>
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/25.html">Ordination Procedure</a></div>
+          </div>
+        </li>
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/26.html">Induction Procedure</a></div>
+          </div>
+        </li>
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/27.html">Ministers</a></div>
+          </div>
+        </li>
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/28.html">Director / Rector</a></div>
+          </div>
+        </li>
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/29.html">Welcome Service</a></div>
+          </div>
+        </li>
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/30.html">Farewell Service </a></div>
+          </div>
+        </li>
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/31.html">Dedication Procedure</a></div>
+          </div>
+        </li>
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/32.html">Sod-cutting</a></div>
+          </div>
+        </li>
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/33.html">Laying of Foundation Stone</a></div>
+          </div>
+        </li>
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/34.html">Ordinary Plaques</a></div>
+          </div>
+        </li>
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/35.html">Commémorative Plaques,Cenotaphs, etc</a></div>
+          </div>
+        </li>
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/36.html">Equipment</a></div>
+          </div>
+        </li>
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="manual/37.html">Independence and Republic Days</a></div>
+          </div>
+        </li>
+		
+		<li class="item-content" style="background-color:CYAN; Color:#000">
+          <div class="item-inner" style="background-color:CYAN; Color:#000"> 
+            <div class="item-title"> OTHER RESOURCES</div>
+          </div>
+        </li>
+		
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="others/1.html">Addendum</a></div>
+          </div>
+        </li>
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="others/2.html">Core Value</a></div>
+          </div>
+        </li>
+		<li class="item-content">
+          <div class="item-inner"> 
+            <div class="item-title"> <a href="others/3.html">History of COP</a></div>
+          </div>
+        </li>
+		
+      </ul>
+	  
+    </div>
+	
+	
+</div>
+
+
+		<!--div style="background-color:#339966; width:100%; height:50px;color:#fff">
+		<!--note--
+		<br><center>2017 All right reserved || Elive Studio Ltd. </center>
+			
+		</div-->
+			
+			
+			
+			<!--data-->
+        </div>
+      </div>
+    </div>
+	
+	  <div class="toolbar" style="background-color:#339966">
+          <div><br><center>2017 All right reserved || Elive Studio Ltd. </center></div>
+        </div>
+	
+	</div>
+
+	</div>
+	<script src="js/jquery.min.js"></script>
+			<script src="js/skel.min.js"></script>
+			<script src="js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="js/main.js"></script>
+	
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+	<!--admob-->
+	<script>
+	 var isAppForeground = true;
+    
+    function initAds() {
+      if (admob) {
+        var adPublisherIds = {
+          ios : {
+            banner : "ca-app-pub-XXXXXXXXXXXXXXXX/BBBBBBBBBB",
+            interstitial : "ca-app-pub-XXXXXXXXXXXXXXXX/IIIIIIIIII"
+          },
+          android : {
+            banner : "ca-app-pub-3356275811212331/7511784004",
+            interstitial : "ca-app-pub-3356275811212331/1897399206"
+          }
+        };
+    	  
+        var admobid = (/(android)/i.test(navigator.userAgent)) ? adPublisherIds.android : adPublisherIds.ios;
+            
+        admob.setOptions({
+          publisherId:      admobid.banner,
+          interstitialAdId: admobid.interstitial,
+          tappxIdiOS:       "/XXXXXXXXX/Pub-XXXX-iOS-IIII",
+          tappxIdAndroid:   "/XXXXXXXXX/Pub-XXXX-Android-AAAA",
+          tappxShare:       0.5,
+          
+        });
+
+        registerAdEvents();
+        
+      } else {
+        alert('AdMobAds plugin not ready');
+      }
+    }
+    
+    function onAdLoaded(e) {
+      if (isAppForeground) {
+        if (e.adType === admob.AD_TYPE.INTERSTITIAL) {
+          console.log("An interstitial has been loaded and autoshown. If you want to load the interstitial first and show it later, set 'autoShowInterstitial: false' in admob.setOptions() and call 'admob.showInterstitialAd();' here");
+        } else if (e.adType === admob.AD_TYPE_BANNER) {
+          console.log("New banner received");
+        }
+      }
+    }
+    
+    function onPause() {
+      if (isAppForeground) {
+        admob.destroyBannerView();
+        isAppForeground = false;
+      }
+    }
+    
+    function onResume() {
+      if (!isAppForeground) {
+        setTimeout(admob.createBannerView, 1);
+        setTimeout(admob.requestInterstitialAd, 1);
+        isAppForeground = true;
+      }
+    }
+    
+    // optional, in case respond to events
+    function registerAdEvents() {
+      document.addEventListener(admob.events.onAdLoaded, onAdLoaded);
+      document.addEventListener(admob.events.onAdFailedToLoad, function (e) {});
+      document.addEventListener(admob.events.onAdOpened, function (e) {});
+      document.addEventListener(admob.events.onAdClosed, function (e) {});
+      document.addEventListener(admob.events.onAdLeftApplication, function (e) {});
+      document.addEventListener(admob.events.onInAppPurchaseRequested, function (e) {});
+      
+      document.addEventListener("pause", onPause, false);
+      document.addEventListener("resume", onResume, false);
+    }
+        
+    function onDeviceReady() {
+      document.removeEventListener('deviceready', onDeviceReady, false);
+      initAds();
+
+      // display a banner at startup
+      admob.createBannerView();
+        
+      // request an interstitial
+      admob.requestInterstitialAd();
+    }
+    
+    document.addEventListener("deviceready", onDeviceReady, false);
+	</script>
+  </body>
+</html> 
